@@ -1,0 +1,61 @@
+body {
+    background-color: rgb(10, 32, 25);
+    text-align: center;
+}
+
+h1 {
+    color: rgb(112, 169, 216);
+}
+.flexBox {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: auto;
+}
+
+.flexBox>div {
+    padding: 2px;
+    margin: 2% 5%;
+}
+
+.incomeGrid, .expGrid {
+    display: grid;
+    grid-template-columns: 55% 40%;
+    grid-auto-rows: min-content;
+    font-size: large;
+    grid-gap: 5px;
+    color: rgb(29, 121, 7);
+}
+
+.incomeGrid>div, .expGrid>div {
+    padding: 2px;
+}
+
+.outputGrid {
+    display: grid;
+    border: 1px solid;
+    grid-template-columns: 50% 45%;
+    grid-auto-rows: min-content;
+    margin: 2% 20%;
+    padding: 10px;
+    font-size: large;
+    color: rgb(134, 76, 9);
+}
+
+.outputGrid>div {
+    padding: 3px
+}
+
+.outputGrid>div:nth-of-type(2n) {
+    color: rgb(124, 6, 98);
+    font-size: larger;
+}
+
+button {
+    padding: 4px 10px;
+}
+
+button:hover {
+    background-color: green;
+    color: whitesmoke;
+}
